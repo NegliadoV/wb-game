@@ -1,0 +1,304 @@
+:root {
+    /* Общие изменения для всех версий */
+    --main-color: #BC3D96;
+
+    --btn-hover: #8D297F;
+    --btn-disabled: #EC238D;
+    --btn-color: #FFFFFF;
+    --btn-box-shadow: 0px 4px 15px rgba(172, 13, 238, 0.25);
+    --btn-border-radius: 50px;
+    --btn-pl-mob: 20px;
+    --btn-pr-mob: 20px;
+
+    --wait-title: #FFFFFF;
+    --wait-subtitle: #FFFFFF;
+
+    /* Дополнительные изменения для стриминговых сервисов */
+    --body-bg: #FFFFFF;
+    --header-bg: #FFFFFF;
+    --footer-bg: #1C1E21;
+    --roulette-bg: #FFFFFF;
+    --roulette-wrapper-bg: #FCFCFC;
+    --section-bg: #FCFCFC;
+    --offer-mob-bg: #F9FBFF;
+    --present-wrap-bg: var(--section-bg) url(../img/present-bg.svg) no-repeat top;
+    --wait-wrap-bg: url(../img/wait-bg.svg) no-repeat top;
+
+    --upsell-header-bg: #fbfbfb;
+    --upsell-status-bg: #FFFFFF;
+    --upsell-bg: #FFFFFF;
+    --upsell-line-bg: #F3F3F3;
+    --upsell-operations-bg: #FFFFFF;
+    --info-bg: #FCFCFC;
+
+    --transfer-bg: #FFFFFF url(../img/transfer-map.svg) no-repeat;
+    --transfer-status-bg: #FAFAFA;
+    --transfer-status-icon-bg: #FFFFFF;
+    --transfer-status-success-bg: #F4FAF5;
+    --transfer-status-error-bg: #FAF4F4;
+
+    --transfer-status-success-border-color: #D6E5D9;
+    --transfer-status-error-border-color: #E5D0D0;
+    --border-color: #F1F1F1;
+    --offer-border-color-mob: #E8F1FF;
+    --upsell-statuses-border-color-mob: #F6F6F6;
+
+    --transfer-status-error-text-color: #793A3A;
+    --transfer-status-success-text-color: #3A7955;
+    --text-color: #96999E;
+    --popup-text-color: #96999E;
+    --title-color: #1C1E21;
+    --popup-title-color: #1C1E21;
+    --h6-color: #BEC0C2;
+    --upsell-copy-color: #C7C7C7;
+}
+
+body {
+    background-color: var(--body-bg);
+    color: var(--text-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--title-color);
+}
+
+.offer__content, .prizes__content, .about__content, .present__content, .chat-section__wrap, .gift-opening__wrap {
+    border-left-color: var(--border-color);
+    border-right-color: var(--border-color);
+}
+
+.offer__btn, .about__btn, .present__btn, .roulette__btn, .popup__form-btn, .upsell__btn, .final__btn {
+    background-color: var(--main-color);
+    border-radius: var(--btn-border-radius);
+    color: var(--btn-color);
+    -webkit-box-shadow: var(--btn-box-shadow);
+            box-shadow: var(--btn-box-shadow);
+}
+
+.offer__btn:hover, .about__btn:hover, .present__btn:hover, .roulette__btn:hover, .popup__form-btn:hover, .upsell__btn:hover, .final__btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.offer__btn:disabled, .about__btn:disabled, .present__btn:disabled, .roulette__btn:disabled, .popup__form-btn:disabled,
+.offer__btn:disabled:hover, .about__btn:disabled:hover, .present__btn:disabled:hover, .roulette__btn:disabled:hover, .popup__form-btn:disabled:hover {
+    background-color: var(--btn-disabled);
+}
+
+.header,
+.header__bottom {
+    border-bottom-color: var(--border-color);
+}
+
+.header {
+    background-color: var(--header-bg);
+}
+
+.header__bottom {
+    background-color: var(--upsell-header-bg);
+}
+
+.offer__content {
+    background-color: var(--section-bg);
+    border-bottom-color: var(--border-color);
+}
+
+.offer__title span,
+.flip-clock-wrapper ul li a div div.inn {
+    color: var(--main-color);
+} 
+
+.present__wrap {
+    background: var(--present-wrap-bg);
+    border-color: var(--border-color);
+}
+
+.prizes__wrap,
+.gift-opening__timer {
+    background-color: var(--main-color);
+}
+
+.footer__content {
+    background-color: var(--footer-bg);
+}
+
+.gift-opening__roulette {
+    border-color: var(--border-color);
+    background-color: var(--roulette-bg);
+}
+
+.roulette__wraper {
+    background-color: var(--roulette-wrapper-bg);
+}
+
+.wait {
+    background-color: var( --main-color);
+}
+
+.wait__wrap {
+    background: var(--wait-wrap-bg);
+}
+
+.wait__title {
+    color: var(--wait-title);
+}
+
+.wait__subtitle {
+    color: var(--wait-subtitle);
+}
+
+.upsell__status,
+.autopay__manager,
+.upsell-item {
+    background-color: var(--upsell-status-bg);
+}
+
+.upsell__status-title,
+.upsell__operations-title,
+.upsell-item__title {
+    color: var(--h6-color);
+}
+
+.upsell__status-content,
+.upsell__operations-text,
+.upsell-content__text .span-sum,
+.upsell-content__text span,
+.autopay__manager-text span,
+.upsell-item__content {
+    color: var(--title-color);
+}
+
+.upsell-content {
+    background-color: var(--section-bg);
+    border-color: var(--border-color);
+}
+
+.upsell__content {
+    background-color: var(--upsell-bg);
+}
+
+.upsell__copy {
+    color: var(--upsell-copy-color);
+}
+
+.upsell__line {
+    background-color: var(--upsell-line-bg);
+}
+
+.upsell__operations {
+    background-color: var(--upsell-operations-bg)
+}
+
+.upsell .container,
+.upsell__header .container {
+    border-left-color: var(--border-color);
+    border-right-color: var(--border-color);
+}
+
+.upsell__operations-icon {
+    background-color: var(--info-bg);
+    border-color: var(--border-color);
+}
+
+.popup__text {
+    color: var(--popup-text-color);
+}
+
+.popup__title {
+    color: var(--popup-title-color);
+}
+
+.transfer__wait {
+    background: var(--transfer-bg)
+}
+
+.transfer__status {
+    background-color: var(--transfer-status-bg);
+    border-color: var(--border-color);
+}
+
+.transfer__success {
+    background-color: var(--transfer-status-success-bg);
+    border-color: var(--transfer-status-success-border-color);
+}
+
+.transfer__error {
+    background-color: var(--transfer-status-error-bg);
+    border-color: var(--transfer-status-error-border-color);
+}
+
+.transfer__success p {
+    color: var(--transfer-status-success-text-color);
+}
+
+.transfer__error p {
+    color: var(--transfer-status-error-text-color);
+}
+
+.transfer__status-icon {
+    background-color: var(--transfer-status-icon-bg);
+}
+
+.autopay__manager {
+    border-color: var(--border-color);
+}
+
+.upsell-item {
+    border-color: var(--border-color);
+}
+
+.offer__img {
+    right: -40px;
+}
+
+@media screen and (max-width: 992px) {
+    .offer__img {
+        max-width: 500px;
+        right: -50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offer__img {
+        right: -120px;
+        max-width: 450px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .offer__picture {
+        justify-content: center;
+    }
+    .offer__img {
+        right: 0;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .offer {
+        background-color: var(--offer-mob-bg);
+        border-color: var(--offer-border-color-mob);
+    }
+}
+@media screen and (max-width: 768px) {
+    .upsell__statuses {
+        border-color: var(--upsell-statuses-border-color-mob);
+    }
+}
+@media screen and (max-width: 576px) {
+    .header {
+        border-color: var(--border-color);
+        background-color: var(--upsell-header-bg);
+    }
+    .footer {
+        background-color: var(--footer-bg);
+    }
+    .upsell__btn, .final__btn {
+        padding-left: var(--btn-pl-mob);
+        padding-right: var(--btn-pr-mob);
+    }
+}

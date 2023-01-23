@@ -1,0 +1,120 @@
+.game__timer {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.game__container {
+    opacity: 0;
+    animation: ani 2.5s forwards;
+    padding: 10px;
+    width: 468px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    transition: opacity .2s linear;
+}
+
+@keyframes ani {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.game__score {
+    margin-bottom: 20px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #bc3d96;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: rgb(255, 255, 255)
+}
+
+.game__inner {
+    position: relative;
+    padding: 10px;
+    width: 470px;
+    height: 404px;
+    background-color: #bc3d96;
+    border-radius: 8px;
+    box-sizing: border-box;
+
+}
+
+
+
+
+.game__wrapper {
+    position: absolute;
+    height: 100%;
+}
+
+.game__marker {
+    width: 54px;
+    height: 54px;
+    border: 32px solid white;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    top: 128px;
+    left: 192px;
+}
+
+.gem {
+    cursor: pointer;
+    position: absolute;
+
+    border: 1px solid transparent;
+    background-size: 100%;
+}
+
+/* Timer */
+.countdown-title {
+    color: #000;
+    font-weight: 100;
+    font-size: 20px;
+    margin: 40px 0px 20px;
+}
+
+.countdown {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+
+.countdown-number {
+    padding: 5px;
+    border-radius: 8px;
+    background: #bc3d96;
+    display: inline-block;
+}
+
+.countdown-time {
+    padding: 3px 10px;
+    border-radius: 8px;
+    background: #bc3d96;
+    display: inline-block;
+}
+
+.countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+}

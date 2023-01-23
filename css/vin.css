@@ -1,0 +1,208 @@
+.vin {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    align-items: center;
+    width: 800px;
+
+
+    height: 1000px;
+    border-radius: 10px;
+    justify-content: center;
+
+    /* Заготовка для будущих анимаций */
+    transition: all .2s linear;
+
+}
+
+.bacground__vin {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    -webkit-overflow-scrolling: touch;
+    background-color: rgba(0, 0, 0, .12);
+    flex-direction: column;
+    z-index: 99;
+    padding: 30px;
+    align-items: center;
+    margin-top: 70px;
+    transition: all .2s linear;
+    opacity: 0;
+}
+
+
+.vin__cup-left {
+    width: 200px;
+    height: 200px;
+
+}
+
+.vin__smile {
+    width: 200px;
+    height: 200px;
+
+
+}
+
+
+.vin__cup-right {
+    width: 200px;
+    height: 200px;
+
+}
+
+.vin__image {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.vin__title {
+
+    margin-bottom: 20px;
+}
+
+.vin__btn {
+    margin-top: 50px;
+    display: flex;
+
+}
+
+.vin__smile {
+    margin: 0 100px;
+}
+
+.vin__winning {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.vin__text {
+    margin-right: 30px;
+}
+
+.vin__money {
+    color: red;
+}
+
+.vin__subtitle {
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.vin-right {
+    width: 100%;
+}
+
+.game__record {
+    margin-bottom: 10px;
+}
+
+.gift-opening__wrap {
+    padding-top: 15px;
+}
+
+
+@media (max-width: 420px) {
+    .game__inner {
+        width: 315px;
+        height: 276px;
+    }
+
+    .gift-opening__roulette {
+        margin-bottom: 100px;
+    }
+
+    .vin__smile {
+        height: 80px;
+        width: 80px;
+        margin: 0 40px;
+    }
+
+    .vin__cup-right {
+        width: 80px;
+        height: 80px;
+
+    }
+
+    .vin__cup-left {
+        width: 80px;
+        height: 80px;
+
+    }
+
+
+    .vin__title {
+
+        font-size: 27px;
+    }
+
+    .vin__text {
+        font-size: 25px;
+    }
+
+    .vin__money {
+        font-size: 25px;
+    }
+
+    .vin__subtitle {
+        font-size: 12px;
+    }
+
+    .vin-right {
+        width: 100%;
+    }
+
+    .vin {
+        width: 320px;
+
+        height: 450px;
+    }
+
+    .vin__btn {
+        margin-top: 17px;
+
+        min-width: 100%;
+    }
+
+    .game__marker {
+        border: 21px solid white;
+        width: 31px;
+        height: 33px;
+    }
+}
+
+.vin__input.top {
+    margin-bottom: 10px;
+}
+
+.vin__input {
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    color: black;
+    border: 1px rgb(175, 175, 175) solid;
+}
+
+.vin__input.bot {
+    border: 1px #ccc solid;
+
+    transition: all .2s linear;
+
+}
+
+.vin__input:hover {
+    border: 1px rgb(175, 175, 175) solid;
+}
+
+.form {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
